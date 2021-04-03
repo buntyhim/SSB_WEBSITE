@@ -108,7 +108,7 @@ function startppdt(){
         new Audio('src/alert.mp3').play();
 
         timer = setTimeout(resetppdt, 30000);
-	timer2 = setTimeout(playsound, 300000);
+	    timer2 = setTimeout(playsound, 300000);
     }
     
 }
@@ -134,9 +134,9 @@ function changeppdtimage(){
         new Audio('src/alert.mp3').play()
 
         clearTimeout(timer);
-	clearTimeout(timer2);
+	    clearTimeout(timer2);
         timer = setTimeout(resetppdt, 30000);
-	timer2 = setTimeout(playsound, 300000);
+	    timer2 = setTimeout(playsound, 300000);
     }
 }
 
@@ -147,10 +147,33 @@ function showNewTopics(){
     document.getElementById("topic3").value = random_topic();
     document.getElementById("topic4").value = random_topic();
 
-}
-
-function loadModel(){
-
+    timer = setTimeout( thirtySecs, 150 * 1000);
     
+
+}
+ 
+function thirtySecs(){
+
+    document.getElementById("topic1").value = "30 sec warning";
+    document.getElementById("topic2").value = "30 sec warning";
+    document.getElementById("topic3").value = "30 sec warning";
+    document.getElementById("topic4").value = "30 sec warning";
+    playsound();
+    timer = setTimeout(timeUpNext, 30 * 1000);
 }
 
+function timeUpNext(){
+    showNewTopics();
+    playsound();
+}
+
+function resetTopics(){
+
+    document.getElementById("topic1").value = '';
+    document.getElementById("topic2").value = '';
+    document.getElementById("topic3").value = '';
+    document.getElementById("topic4").value = '';
+
+    clearTimeout(timer);
+
+}
