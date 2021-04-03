@@ -1,0 +1,86 @@
+/* master styles*/
+
+body{
+	margin: 0;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+/* nav style */
+
+.navigator{
+	display: flex;
+	justify-content: space-between;
+	padding: 38px;
+	background: pink;
+}
+
+.left-col{
+	display: flex;
+
+}
+
+.navigator > .left-col > div{
+	margin-right: 25px;
+	font-size: 0.8em;
+}
+
+.nav-link{
+	height: 22px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+
+}
+
+.nav-link a{
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;
+	
+}
+
+.nav-link:hover{
+	border-bottom: 1px solid black;
+
+}
+
+.nav-link a:hover{
+	color: black;
+	
+}
+
+
+/* exercise styles */
+.alltasks{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.exercise{
+	position: relative;
+}
+
+.ex-image{
+	height: 400px;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+.ex-text{
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}

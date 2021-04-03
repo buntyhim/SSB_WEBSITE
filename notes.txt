@@ -1,0 +1,29 @@
+1. Building project
+    folders truct
+    adding and connecting files
+
+2. Nav Bar
+    Name 
+    PPDT
+    GPE
+    Lecturette
+
+3. Welcome page
+    about
+    image
+    
+4. PPDT page
+    button
+    image
+    timer
+
+5. GPE
+    2 button
+    2 images
+    timer
+
+6. Lecturette
+    buttom
+    randomized list of topics
+    timer
+    alarm clock
