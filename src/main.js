@@ -177,3 +177,49 @@ function resetTopics(){
     clearTimeout(timer);
 
 }
+
+function loadStory(){
+    
+        console.log(MODELNUMBER)
+        document.getElementById("gpeStory").src =  'gpe/'+MODELNUMBER+'/story.jpg';
+        document.getElementById("gpeStory").style.display = 'block';
+        
+    
+}
+
+function hideStory(){
+    
+    document.getElementById("gpeStory").style.display = 'none';
+    
+}
+
+function loadModel(){
+    
+    if(document.getElementById("gpeModel").style.display == 'none'){
+        MODELNUMBER = Math.floor((Math.random() * 5) + 1);
+        document.getElementById("gpeModel").src =  'gpe/'+MODELNUMBER+'/model.jpg';
+        document.getElementById("gpeModel").style.display = 'block';
+
+    }
+
+}
+
+function changeModel(){
+    
+    if(document.getElementById("gpeModel").style.display != 'none'){
+        MODELNUMBER = Math.floor((Math.random() * 5) + 1);
+        document.getElementById("gpeModel").src =  'gpe/'+MODELNUMBER+'/model.jpg';
+        document.getElementById("gpeStory").style.display = 'none';
+
+    }
+    
+}
+
+function resetGPE(){
+    
+    document.getElementById("gpeModel").src =  '...';
+    document.getElementById("gpeModel").style.display = 'none';
+    document.getElementById("gpeStory").src =  '...';
+    document.getElementById("gpeStory").style.display = 'none';
+
+}
