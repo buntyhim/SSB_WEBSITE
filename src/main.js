@@ -103,7 +103,7 @@ function random_topic()
 function startppdt(){
     if(document.getElementById("ppdtImage").style.display == 'none'){
         randNum = Math.floor((Math.random() * 16) + 1);
-        document.getElementById("ppdtImage").src =  'ppdt/ppdt ('+randNum+').jpg';
+        document.getElementById("ppdtImage").src =  'ppdt/'+randNum+'/image.jpg';
         document.getElementById("ppdtImage").style.display = 'block';
         new Audio('src/alert.mp3').play();
 
@@ -117,7 +117,7 @@ function resetppdt(){
     if(document.getElementById("ppdtImage").style.display != 'none'){
         document.getElementById("ppdtImage").style.display = 'none';
         randNum = Math.floor((Math.random() * 16) + 1);
-        document.getElementById("ppdtImage").src =  'ppdt/ppdt ('+randNum+').jpg';
+        document.getElementById("ppdtImage").src =  'ppdt/'+randNum+'/image.jpg';
         new Audio('src/alert.mp3').play();
     }
 	
@@ -130,7 +130,7 @@ function playsound(){
 function changeppdtimage(){
     if(document.getElementById("ppdtImage").style.display != 'none'){
         randNum = Math.floor((Math.random() * 16) + 1);
-        document.getElementById("ppdtImage").src =  'ppdt/ppdt ('+randNum+').jpg';
+        document.getElementById("ppdtImage").src =  'ppdt/'+randNum+'/image.jpg';
         new Audio('src/alert.mp3').play()
 
         clearTimeout(timer);
