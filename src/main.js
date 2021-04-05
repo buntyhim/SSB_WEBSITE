@@ -113,11 +113,14 @@ function startppdt(){
     
 }
 
+function showppdtimage(){
+ 
+        document.getElementById("ppdtImage").style.display = 'block'
+}
+
 function resetppdt(){
     if(document.getElementById("ppdtImage").style.display != 'none'){
         document.getElementById("ppdtImage").style.display = 'none';
-        randNum = Math.floor((Math.random() * 16) + 1);
-        document.getElementById("ppdtImage").src =  'ppdt/'+randNum+'/image.jpg';
         new Audio('src/alert.mp3').play();
     }
 	
@@ -129,7 +132,7 @@ function playsound(){
 
 function changeppdtimage(){
     if(document.getElementById("ppdtImage").style.display != 'none'){
-        randNum = Math.floor((Math.random() * 16) + 1);
+        randNum = Math.floor((Math.random() * 17) + 1);
         document.getElementById("ppdtImage").src =  'ppdt/'+randNum+'/image.jpg';
         new Audio('src/alert.mp3').play()
 
